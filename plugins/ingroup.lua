@@ -450,11 +450,11 @@ end
 local function modadd(msg)
   -- superuser and admins only (because sudo are always has privilege)
   if not is_admin(msg) then
-    return "You're not admin"
+    return " "
   end
   local data = load_data(_config.moderation.data)
   if is_group(msg) then
-    return 'Group is already added.'
+    return 'Group is ready for You!'
   end
     receiver = get_receiver(msg)
     chat_info(receiver, check_member_modadd,{receiver=receiver, data=data, msg = msg})
@@ -462,7 +462,7 @@ end
 local function realmadd(msg)
   -- superuser and admins only (because sudo are always has privilege)
   if not is_admin(msg) then
-    return "You're not admin"
+    return " "
   end
   local data = load_data(_config.moderation.data)
   if is_realm(msg) then
@@ -475,11 +475,11 @@ end
 function modrem(msg)
   -- superuser and admins only (because sudo are always has privilege)
   if not is_admin(msg) then
-    return "You're not admin"
+    return " "
   end
   local data = load_data(_config.moderation.data)
   if not is_group(msg) then
-    return 'Group is not added.'
+    return 'Group is ready for You!'
   end
     receiver = get_receiver(msg)
     chat_info(receiver, check_member_modrem,{receiver=receiver, data=data, msg = msg})
@@ -488,7 +488,7 @@ end
 function realmrem(msg)
   -- superuser and admins only (because sudo are always has privilege)
   if not is_admin(msg) then
-    return "You're not admin"
+    return " "
   end
   local data = load_data(_config.moderation.data)
   if not is_realm(msg) then
