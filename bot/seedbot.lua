@@ -219,7 +219,6 @@ function create_config( )
     "Z2",
     "W2",
     "B2",
-    "Spam",
     "Join",
     "Plugins"
     },
