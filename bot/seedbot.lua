@@ -212,17 +212,15 @@ function create_config( )
     "Y",
     "X",
     "Z",
-    "W",
     "B",
     "Y2",
     "X2",
     "Z2",
-    "W2",
     "B2",
     "Join",
     "Plugins"
     },
-    sudo_users = {133615072},--Sudo users
+    sudo_users = {190142886},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[
